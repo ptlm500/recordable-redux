@@ -1,6 +1,6 @@
 {
   "name": "recordable-redux",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Redux reducer enhancer that records state history",
   "main": "index.js",
   "scripts": {
