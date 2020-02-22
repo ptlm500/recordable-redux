@@ -12,6 +12,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+      - run: npm install
       - run: npm run test:ci
       - run: npm run lint
 
@@ -24,6 +25,7 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
+      - run: npm install
       - run: npm run test:ci
       - run: npm run lint
       - run: npm publish
@@ -40,6 +42,7 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
           scope: '@ptlm500'
+      - run: npm install
       - run: npm run test:ci
       - run: npm run lint
       - run: npm publish
