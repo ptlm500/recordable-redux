@@ -4,6 +4,7 @@
   "description": "Redux reducer enhancer that records state history",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint ./src/",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:ci": "jest --ci --coverage"

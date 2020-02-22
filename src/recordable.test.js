@@ -24,7 +24,7 @@ describe('recordable with custom action types', () => {
     'FORWARD': 'CUSTOM_FORWARD',
     'TOGGLE_RECORDING': 'CUSTOM_TOGGLE_RECORDING',
     'CLEAR_RECORDING': 'CUSTOM_CLEAR_RECORDING'
-  }
+  };
 
   beforeEach(() => {
     reducerWithRecordable = recordable(mockReducer, customActionTypes);
