@@ -2,8 +2,18 @@ import { List, fromJS, is } from 'immutable';
 import defaultActionTypes from './defaultActionTypes';
 
 /**
+ * Action types
+ * @typedef {Object} ActionTypes
+ * @property {string} BACK The action to go back in recorded state
+ * @property {string} FORWARD The action to go forward in recorded state
+ * @property {string} TOGGLE_RECORDING The action to toggle the recording of state
+ * @property {string} CLEAR_RECORDING  The action to clear the recorded state
+ */
+
+/**
  * Wraps a reducer with a recording of past and future state
  * @param {function} reducer The reducer to wrap
+ * @param {ActionTypes} [actionTypes]
  * @returns {Object} Immutable Map containing past, present and future states
  *    with recordingEnabled to track current recording state
  */
